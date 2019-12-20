@@ -43,8 +43,8 @@ Page({
     
     var ad = util.interstitialAd('adunit-4207b730d6be7ec7')
     if (ad) {
-      ad.show().catch((err) => {
-      })
+      // ad.show().catch((err) => {
+      // })
     }
     const db = wx.cloud.database()
     db.collection('mingju').where({
