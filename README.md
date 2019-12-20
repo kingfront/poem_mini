@@ -2,7 +2,11 @@
 
 此微信小程序目前在线运行，小程序码如下：
 
-![https://github.com/kingfront/poem_mini/blob/master/321576811809_.pic.jpg]
+<image src="https://github.com/kingfront/poem_mini/blob/master/321576811809_.pic.jpg" width="200" />
+<image src="https://github.com/kingfront/poem_mini/blob/master/321576811809_.pic.jpg" width="200" />
+<image src="https://github.com/kingfront/poem_mini/blob/master/321576811809_.pic.jpg" width="200" />
+<image src="https://github.com/kingfront/poem_mini/blob/master/321576811809_.pic.jpg" width="200" />
+<image src="https://github.com/kingfront/poem_mini/blob/master/321576811809_.pic.jpg" width="200" />
 
 小程序整体框架如下：
 - 数据库：基于微信云服务器免费版
