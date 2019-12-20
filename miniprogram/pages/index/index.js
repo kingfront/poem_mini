@@ -43,8 +43,8 @@ Page({
     
     var ad = util.interstitialAd('adunit-4207b730d6be7ec7')
     if (ad) {
-      // ad.show().catch((err) => {
-      // })
+      ad.show().catch((err) => {
+      })
     }
     const db = wx.cloud.database()
     db.collection('mingju').where({
@@ -56,7 +56,8 @@ Page({
           tFlag: app.globalData.tFlag,
           mingjuInfo: res.data[0]
         })
-        if (res.data[0].poetId == '0') {
+        wx.hideToast();
+        if (!res.data[0].poetId || res.data[0].poetId == '0') {
           this.fetchMingJu();
         } else {
           this.fetchAuthor(res.data[0].poetId)
@@ -73,6 +74,7 @@ Page({
    * 查询诗人信息
    */
   fetchAuthor: function(id) {
+    console.info(id)
     const db = wx.cloud.database()
     db.collection('author').where({
       poetId: id
