@@ -1,0 +1,6 @@
+/* miniprogram/pages/pass/pass.wxss */
+.canvas{
+  margin: 0 auto;
+  letter-spacing: 2rpx;
+  margin-top: 10%;
+}

@@ -1,0 +1,12 @@
+<view class="wxView animation-shake">
+  <button open-type="share" class="button-share" id="share-button">
+  </button>
+  <label for="share-button">
+    <image class='wxImg' src='../../images/share_icon.png'></image>
+  </label>
+</view>
+<!-- <navigator url="/pages/index/index" open-type="switchTab" hover-class="other-navigator-hover"> 
+  <view class="wxView animation-shake">
+    <image class='wxImg' src='../../images/index_icon.jpg'></image>
+  </view>
+</navigator> -->

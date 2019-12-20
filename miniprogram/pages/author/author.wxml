@@ -1,0 +1,28 @@
+<!--pages/author/author.wxml-->
+<view class="main solid-top">
+  <view class="avatar padding-top">
+  <view class="cu-avatar lg round" style="background-image:url({{authorInfo.image}});"></view>
+  <view class="margin-top-xs">{{authorInfo.name}}</view>
+  </view>
+  
+  <view class="padding-xs bg-white">
+    <view class="my-desc text-left padding">{{authorInfo.desc}}</view>
+  </view>
+
+  <view wx:if="{{authorInfo}}" class="animation-fade">
+  <view class="cu-bar bg-white solid-bottom">
+    <view class="action">
+      <text class="cuIcon-title text-olive"></text>生平介绍
+    </view>
+  </view>
+   <view class="padding-xs bg-white">
+    <view class="my-desc {{cutFlg?'desc-cut':''}} text-left padding">
+      {{authorInfo.content}}<br/>
+    </view>
+    <view bindtap="moreInfo" class="text-center margin-top">
+      <text class="cuIcon-{{cutFlg?'unfold':'fold'}} text-black text-xxl xxl"></text>
+    </view>
+  </view>
+  </view>
+
+</view>

@@ -1,0 +1,25 @@
+<!--pages/search/search.wxml-->
+<view class="cu-bar solid-top search bg-white">
+    <view class="search-form round">
+      <text class="cuIcon-search"></text>
+      <input type="text" bindinput="bindInputName" placeholder="搜索诗人" confirm-type="search"></input>
+    </view>
+    <view class="action">
+      <button bindtap="search" class="cu-btn bg-olive shadow-blur round">搜索</button>
+    </view>
+  </view>
+  <view class="cu-bar bg-white">
+  <view class="action">
+    <text class="cuIcon-title text-olive"></text>搜索热词
+  </view>
+</view>
+  <view class="padding-sm flex flex-wrap">
+    <view wx:for="{{hotList}}" wx:key class="padding-xs">
+    <navigator url="/pages/category/category?searchName={{item}}" open-type="navigate" hover-class="other-navigator-hover"> 
+      <view class="cu-tag bg-olive">{{item}}</view>
+      </navigator>
+    </view>
+  </view>
+  <view class="padding-sm flex flex-wrap">
+    <ad unit-id="adunit-5a7fadfe61ddeda8"></ad>
+  </view>

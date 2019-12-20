@@ -1,0 +1,11 @@
+<view class='padding-xs flex align-center text-black'>
+  <view class='flex-sub text-center'>
+    <view class='text-xsl padding'>
+      <text class='icon-infofill text-qu'></text>
+    </view>
+    <view class='padding'>为了更好的体验，此应用需要获取您的昵称、头像等基本信息授权</view>
+  </view>
+</view>
+<view class='padding-xl'>
+  <button class='cu-btn  bg-qu shadow bg-olive text-white lg block' open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">确定授权</button>
+</view>

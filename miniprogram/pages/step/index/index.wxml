@@ -1,0 +1,88 @@
+<view class="main">
+  <view class="piao">
+   <scroll-view scroll-y style="height: {{windowHeight}}px;" >
+    <view wx:if="{{userInfo!=null}}" class="avatar padding-top padding-bottom userinfo-bg">
+      <view class="cu-avatar lg round" style="background-image:url({{userInfo.avatarUrl}});"></view>
+      <view class="margin-top-xs">今日步数</view>
+      <view class="margin-top-xs step-num">{{step?step:0}}</view>
+      <navigator url="/pages/step/detail/detail" open-type="navigate" hover-class="other-navigator-hover"> 
+      <view class="lokkstep">历史步数</view>
+      </navigator>
+    </view>
+
+    <view wx:if="{{userInfo==null && wxAuth}}" class="avatar padding-top padding-bottom userinfo-bg">
+    <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" id="userinfo-button">
+      </button>
+    <label for="userinfo-button">
+      <view class="cu-avatar lg round">
+        <text class="cuIcon-friendfavor lg text-gray"></text>
+      </view>
+      <view class="margin-top-xs">点击登录</view>
+      <view class="margin-top-xs">登录后才能看到您的步数排行哦</view>
+      </label>
+    </view>
+  
+  <view class="cu-list menu-avatar solid-top">
+    <!-- <view wx:if="{{!wxAuth}}" class="cu-item solid-bottom bg-white">
+      <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" id="userinfo-button">
+      </button>
+      <view class="cu-avatar round lg mg-left" >
+         <text class="cuIcon-friendfavor lg text-gray"></text>
+      </view>
+      <label for="userinfo-button" class="userinfo-button">
+        <view class="content mg-left">
+          <view class="text-black text-cut nick-name">点击登录
+          </view>
+          <view class="text-blueLight text-sm flex">
+            <text class="text-cut mg-left">
+                <text>登录后可以看到你的步数排行哦</text>
+            </text>
+          </view>
+        </view>
+      </label>
+    </view> -->
+
+    <view wx:for="{{runList}}" wx:key="{{item.id}}" class="cu-item solid-bottom bg-self">
+      <view class="what-num">
+        {{index+1}}
+      </view>
+      <view class="cu-avatar round lg mg-left" style="background-image:url({{item.avatarUrl}});">
+        <view wx:if="{{index==0}}" class="cu-tag badge-white"><text class="cuIcon-crownfill text-yellow"></text></view>
+      </view>
+      <view class="content mg-left">
+        <view class="text-black text-cut nick-name">{{item.nickName}}
+          <text wx:if="{{item.gender==1}}" class="cuIcon-male text-blue text-sm"></text>
+          <text wx:if="{{item.gender==2}}" class="cuIcon-female text-orange text-sm"></text>
+        </view>
+        <view class="text-blueLight text-sm flex">
+          <text class="text-cut mg-left">
+							<text>{{item.province}} {{item.city}}</text>
+          </text>
+        </view>
+      </view>
+      <view class="action">
+        <view class="round step-num">{{item.step}}</view>
+      </view>
+      <view class="action">
+        <view class="text-grey text-xs"></view>
+        <text class="cuIcon-footprint text-own"></text>
+      </view>
+    </view>
+    </view>
+    </scroll-view>
+  </view>
+  <!-- <view class="cu-modal {{wxAuth?'show':''}}">
+    <view bindtap="authClose" class="auth-close"><text class="cuIcon-close text-white lg"></text></view>
+    <view class="wx-tip">
+      <view class="tip-title">为了更好的体验，需要获取昵称等信息</view>
+      <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="cu-btn round bg-olive margin-tb-sm lg lg-self">确认</button>
+    </view>
+  </view> -->
+</view>
+ <view class="stars">
+    <view class="star"></view>
+    <view class="star pink"></view>
+    <view class="star blue"></view>
+    <view class="star yellow"></view>
+  </view>
+  <help></help>

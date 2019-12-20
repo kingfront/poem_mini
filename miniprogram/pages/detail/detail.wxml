@@ -1,0 +1,40 @@
+<!--pages/detail/detail.wxml-->
+<view wx:if="{{poemInfo}}" class="up-view animation-fade">
+  <view class="flex-sub solid-top text-center">
+    <view class="text-xl padding animation-slide-top">
+      <text class="text-black text-bold">{{poemInfo.name}}</text>
+    </view>
+    <view class="text-sm padding-xs">
+      <text bindtap="toAuthor" data-poetId="{{poetId}}" class="text-black">{{poetName}}</text>
+      <view data-dynasty="{{poemInfo.dynasty}}" class="cu-tag margin-left round bg-olive sm animation-slide-right">{{poemInfo.dynasty}}</view>
+    </view>
+  </view>
+  <view class="padding-xs bg-white">
+      <text class="my-desc padding-xs text-center">
+        {{poemInfo.content}}
+      </text>
+  </view>
+</view>
+<view wx:if="{{poemInfo}}" class="animation-fade">
+  <view class="bg-white {{tabFix?'fixed':''}} solid-top solid-bottom nav text-center">
+    <view wx:if="{{poemInfo.about}}" class="cu-item {{0==TabCur?'text-olive cur':''}}" bindtap="tabSelect" data-id="0">
+      <text class="cuIcon-camerafill"></text> 关于诗人
+    </view>
+    <view wx:if="{{poemInfo.fanyi}}" class="cu-item {{1==TabCur?'text-olive cur':''}}" bindtap="tabSelect" data-id="1">
+      <text class="cuIcon-upstagefill"></text> 译文
+    </view>
+    <view wx:if="{{poemInfo.shangxi}}" class="cu-item {{2==TabCur?'text-olive cur':''}}" bindtap="tabSelect" data-id="2">
+      <text class="cuIcon-clothesfill"></text> 赏析
+    </view>
+  </view>
+  <view class="padding-xs bg-white">
+      <view class="my-desc {{cutFlg?'desc-cut':''}} text-left padding">
+        <block wx:if="{{TabCur=='0'}}">{{poemInfo.about}}</block>
+        <block wx:if="{{TabCur=='1'}}">{{poemInfo.fanyi}}</block>
+        <block wx:if="{{TabCur=='2'}}">{{poemInfo.shangxi}}</block>
+      </view>
+      <view bindtap="moreInfo" class="text-center margin-top">
+        <text class="cuIcon-{{cutFlg?'unfold':'fold'}} text-black text-xxl xxl"></text>
+      </view>
+  </view>
+</view>

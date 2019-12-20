@@ -1,0 +1,7 @@
+/* pages/step/detail/detail.wxss */
+.step-num{
+  font-size: 35rpx;
+  color: var(--orange);
+  font-weight: 500;
+  margin-right: 20px;
+}

@@ -1,0 +1,23 @@
+.icon-share:before { content: "\e6f3"; }
+.text-own, .line-own {
+  color: #1cbbb4;
+}
+.wxView{
+  position: fixed;
+  bottom: 30rpx;
+  width: 100rpx;
+  height: 100rpx;
+  right: 30rpx;
+  border-radius: 50%;
+  background-color:transparent;
+}
+.wxImg{
+  position:fixed;
+  right:30rpx;
+  bottom:30rpx;
+  width:100rpx;
+  height:100rpx;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 100rpx;
+}

@@ -1,0 +1,31 @@
+<!--pages/mine/mine.wxml-->
+<view class='banner-view'>
+  <image class='banner-img' wx:if="{{imageUrl}}" src='https://picjumbo.com/wp-content/uploads/{{imageUrl}}'></image>
+  </view>
+<view class="stars ">
+  <view class="star "></view>
+  <view class="star pink "></view>
+  <view class="star blue "></view>
+  <view class="star yellow "></view>
+</view>
+<view class="cu-list menu solid animation-fade">
+  <view class="cu-item" bindtap='toMin'>
+    <view class='content'>
+       <text class="cuIcon-hotfill text-orange"></text>
+      <text>乐享更精彩</text>
+    </view>
+    <view class='action'>
+      <view class="cu-tag round bg-orange light">健康</view>
+      <view class="cu-tag round bg-olive light">养生</view>
+      <view class="cu-tag round bg-blue light">小程序</view>
+    </view>
+  </view>
+  <view class="cu-item">
+    <navigator class="content" url="/pages/about/about" hover-class="none">
+      <view class='content'>
+         <text class="cuIcon-my text-orange"></text>
+        <text>关于我们</text>
+      </view>
+    </navigator>
+  </view>
+</view>

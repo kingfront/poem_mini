@@ -1,0 +1,88 @@
+<!--index.wxml-->
+<view class="container">
+  <view wx:if="{{topTip}}" bindtap="hideTopTip" class="top-tip animation-slide-top">
+    <image src="../../images/close.png"></image>
+    <view class="top-tip-font">点击右上角...添加到我的小程序</view>
+  </view>
+    <view class='banner-view'>
+      <image class='banner-img' wx:if="{{imageUrl}}" src='http://123.57.37.43/wifi/test/static/banner.jpg'></image>
+    </view>
+  <view class="bg-white animation-fade">
+  <navigator url="/pages/detail/detail?poetryId={{mingjuInfo.poetryId}}&poetName={{mingjuInfo.poetName}}&poetId={{mingjuInfo.poetId}}" open-type="navigate" hover-class="other-navigator-hover"> 
+    <view class="flex padding-mj-title justify-start">
+      <view class="flex-sub radius">
+        <text class='text-lg text-black'>{{mingjuInfo.poetryName}}</text>
+        <view class='cu-tag.sm bg-olive light margin-left'>
+       {{mingjuInfo.poetName}}
+         </view>
+      </view>
+    </view>
+    <view class="flex solid-bottom padding-mj-content justify-start">
+      <view class="flex-sub radius">
+        <text class='text-df text-black'>{{mingjuInfo.content}}</text>
+      </view>
+    </view>
+    </navigator>
+  </view>
+  
+  <navigator url="/pages/author/author?poetId={{authorInfo.poetId}}" open-type="navigate" hover-class="other-navigator-hover"> 
+  <view wx:if="{{authorInfo}}" class="cu-list solid-bottom menu-avatar animation-fade">
+    <view class="cu-item">
+      <view class="cu-avatar round lg" style="background-image:url({{authorInfo.image?authorInfo.image:'./user-unlogin.png'}});"></view>
+      <view class="content">
+        <view class="text-black">{{authorInfo.name}}</view>
+        <view class="text-gray text-sm flex">
+          <text class="text-cut">
+							<text></text> {{authorInfo.desc}}
+          </text>
+        </view>
+      </view>
+      <view class="action">
+      <view class="cu-tag round bg-olive sm">{{authorInfo.dynasty}}</view>
+    </view>
+    </view>
+    </view>
+    </navigator>
+   <view class="cu-list grid col-4 no-border">
+    <view class="cu-item">
+      <navigator url="/pages/category/category" open-type="navigate" hover-class="other-navigator-hover"> 
+        <view class="cuIcon-people text-olive"></view>
+        <view class='text-df margin-top-xs text-black'>诗人</view>
+       </navigator>
+    </view>
+    <view class="cu-item">
+     <navigator url="/pages/search/search" open-type="navigate" hover-class="other-navigator-hover">
+      <view class="cuIcon-search text-olive"></view>
+      <view class='text-df margin-top-xs text-black'>搜索</view>
+      </navigator>
+    </view>
+    <view bindtap="toHappy" class="cu-item">
+      <view class="cu-tag badge">
+        <block>步</block>
+       </view>
+      <view class="cuIcon-video text-olive"></view>
+      <view class='text-df margin-top-xs text-black'>步友圈</view>
+    </view>
+      <view class="cu-item">
+         <label for="share-button">
+          <view class="cuIcon-share text-olive"></view>
+          <view class='text-df margin-top-xs text-black'>分享</view>
+         </label>
+          <button open-type="share" class="button-share" id="share-button">
+          </button>
+      </view>
+      <view>
+      </view>
+   </view> 
+   <view class="ads-view">
+      <ad unit-id="adunit-5a7fadfe61ddeda8"></ad>
+    </view>
+  
+   <view class="stars">
+    <view class="star"></view>
+    <view class="star pink "></view>
+    <view class="star blue "></view>
+    <view class="star yellow "></view>
+  </view>
+  <official-account></official-account>
+</view>

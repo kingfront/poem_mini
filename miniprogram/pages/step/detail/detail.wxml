@@ -1,0 +1,12 @@
+<view class="cu-list menu solid animation-fade">
+  <view wx:for="{{stepInfoList}}" wx:key="{{item.timestamp}}" class="cu-item">
+      <view class='content'>
+        <text class='cuIcon-time'></text>
+        <text>{{item.timestamp}}</text>
+      </view>
+      <view class='action'>
+        <text class="step-num">{{item.step}}</text>
+        <text class='cuIcon-footprint text-own'></text>
+      </view>
+    </view>
+</view>

@@ -1,0 +1,12 @@
+/* pages/detail/detail.wxss */
+.my-desc{
+  display: block;
+  line-height: 50rpx;
+  text-indent: 2em;
+}
+.desc-cut{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-overflow: -o-ellipsis-lastline;
+  height: 280rpx;
+}

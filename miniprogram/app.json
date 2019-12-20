@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/step/index/index",
+    "pages/mine/mine",
+    "pages/search/search",
+    "pages/pass/pass",
+    "pages/wifi/wifi"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "古诗词乐享",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#ffffff",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#aaa",
+    "selectedColor": "#000",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/images/tabbar/basics.png",
+        "selectedIconPath": "/images/tabbar/basics_cur.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/step/index/index",
+        "iconPath": "/images/tabbar/component.png",
+        "selectedIconPath": "/images/tabbar/component_cur.png",
+        "text": "步数圈"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "/images/tabbar/about.png",
+        "selectedIconPath": "/images/tabbar/about_cur.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {
+    "help": "components/help/help"
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wxf41876102dde0d23"
+  ],
+  "sitemapLocation": "sitemap.json"
+}

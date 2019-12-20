@@ -1,0 +1,9 @@
+<!--miniprogram/pages/pass/pass.wxml-->
+<view class='padding-xl'>
+  <button class='cu-btn  bg-qu shadow bg-olive text-white lg block' bindtap="canvasImg">生成图片</button>
+</view>
+<canvas class='canvas' canvas-id='shareCanvas' style='width:{{canvasWidth}}px;height:{{canvasHeight}}px'></canvas>
+
+<view class='padding-xl'>
+  <button class='cu-btn  bg-qu shadow bg-olive text-white lg block' bindtap="btnTap">保存图片</button>
+</view>

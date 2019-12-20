@@ -1,0 +1,56 @@
+<!--pages/category/category.wxml-->
+<view class='main'>
+  <view class='pullDown_view'>
+    <image class='pullDown_img' src='../../images/pullDown.gif'></image>
+  </view>
+  <view class="make-bar padding solid-bottom solid-top text-df text-black bg-white">
+    <view class="flex">
+      <view bindtap="showSearch" data-index="1" class="flex-sub text-center {{currentIndex=='1'?'text-olive':''}} radius">诗人年代
+        <text class="cuIcon-{{currentIndex=='1'?'fold':'unfold'}} lg"></text>
+      </view>
+      <view bindtap="showSearch" data-index="2" class="flex-sub text-center {{currentIndex=='2'?'text-olive':''}} radius">诗人姓名
+        <text class="cuIcon-{{currentIndex=='2'?'fold':'unfold'}} lg"></text>
+      </view>
+      <view bindtap="showSearch" data-index="3" class="flex-sub text-center {{currentIndex=='3'?'text-olive':''}} radius">诗人风格
+        <text class="cuIcon-{{currentIndex=='3'?'fold':'unfold'}} lg"></text>
+      </view>
+    </view>
+  </view>
+
+  <view class='my-model' wx:if="{{searchFlg}}">
+   <view class='niandai animation-slide-top'>
+    <view class="padding-sm flex flex-wrap">
+      <view wx:for="{{tagList}}" wx:if="{{index<20}}" wx:key class="padding-sm">
+        <view bindtap='selectTab' data-info='{{item}}' data-index='{{index}}' class="cu-tag own-tag text-black line-grey {{item.flg?'bg-olive':'bg-white'}}">
+          {{item.name}}
+        </view>
+      </view>
+    </view>
+    <view class="padding flex flex-direction">
+      <button bindtap='makeSearch' class="cu-btn bg-olive margin-tb-sm lg">确定</button>
+    </view>
+  </view>
+  </view>
+
+  <view class="my-middle solid-top">
+  <view class="cu-list menu-avatar">
+    <view wx:for="{{poemList}}" wx:key="{{item.poetry}}" class="cu-item solid-bottom">
+
+      <view class="cu-avatar round lg" style="background-image:url({{item.image}});"></view>
+      <navigator url="/pages/author/author?poetId={{item.poetId}}" open-type="navigate" hover-class="other-navigator-hover"> 
+      <view class="content">
+        <view class="text-black">{{item.name}}</view>
+        <view class="text-gray text-sm flex">
+          <text class="text-cut">
+							<text></text>{{item.desc}}
+          </text>
+        </view>
+      </view>
+      <view class="action">
+      <view class="cu-tag round bg-olive sm">{{item.dynasty}}</view>
+    </view>
+    </navigator>
+    </view>
+    </view>
+  </view>
+</view>

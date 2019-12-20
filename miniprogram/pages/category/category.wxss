@@ -1,0 +1,53 @@
+/* pages/category/category.wxss */
+.s-tabs{
+    background: #ccc;
+    font-size: 14px;
+    color: #878787;
+    height: 80rpx;
+}
+.ui-icon.active {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    color: #09C2B1!important;
+}
+.main{
+  background-color: #ffffff
+}
+
+.make-bar{
+  position: fixed;
+  width: 100%;
+  height: 100rpx;
+  z-index: 103;
+  top: 0;
+}
+
+.niandai{
+  z-index: 102;
+  position: absolute;
+  background-color: #ffffff;
+  transition-duration:0.1s;
+}
+.my-model{
+  z-index: 101;
+  position:fixed;
+  top:100rpx;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:3;
+  width: 100%;
+  height: 100%;
+  background:rgba(0, 0, 0, 0.6);
+}
+.own-tag {
+  width: 137rpx;
+}
+.my-middle{
+  position:absolute;
+  width:100%;
+}
+.cu-list.menu-avatar>.cu-item .flex .text-cut {
+  max-width:510rpx;
+  max-height:80rpx;
+}

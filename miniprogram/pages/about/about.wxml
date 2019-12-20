@@ -1,0 +1,8 @@
+<!--pages/about/about.wxml-->
+<view class='margin-xl bg-white radius shadow-lg'>
+  <view class='text-center margin-bottom text-lg  text-grey'>关于古诗词乐享</view>
+  <view class='text-content'>
+    <view class='text-indent margin-top-sm'>中华古诗词拥有着悠久的历史文化内涵，通过该小程序，您可以每天学习一条名句，丰富您的学识和文化内涵</view>
+    <view class='margin-top-sm'>更多古诗词内容，尽情期待！</view>
+  </view>
+</view>

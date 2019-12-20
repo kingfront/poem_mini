@@ -1,0 +1,24 @@
+<view class="main">
+  <view class="piao">
+  <view class='banner-view'>
+    <image class='banner-img' src='http://123.57.37.43/wifi/test/static/wifi_banner.jpg'></image>
+  </view>
+
+  <view class="ads-view">
+    <ad unit-id="adunit-5a7fadfe61ddeda8"></ad>
+  </view>
+  
+  <!-- <navigator url="/pages/index/index" open-type="switchTab" hover-class="other-navigator-hover"> 
+    <view class='padding-xl'>
+      <button class='cu-btn  bg-qu shadow bg-olive text-white lg block'>返回首页</button>
+    </view>
+  </navigator> -->
+</view>
+</view>
+ <view class="stars">
+    <view class="star"></view>
+    <view class="star pink"></view>
+    <view class="star blue"></view>
+    <view class="star yellow"></view>
+  </view>
+  <help></help>

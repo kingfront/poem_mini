@@ -1,0 +1,56 @@
+/**index.wxss**/
+
+page {
+  background: #ffffff
+}
+.banner-view{
+  width: 100%;
+  height: 350rpx;
+}
+.ads-view{
+  width: 700rpx;
+  border-radius: 2%;
+  margin-left: 25rpx;
+}
+.banner-img{
+  width: 100%;
+  height: 100%;
+}
+.padding-mj-title{
+  padding-top: 10rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.padding-mj-content{
+  padding-top: 10rpx;
+  padding-bottom: 45rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.button-share{
+  display: none
+}
+.top-tip{
+  width: 750rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  top: 0;
+  z-index: 1000;
+  text-align: center;
+  color: #ffffff;
+  background-color: var(--olive);
+}
+.top-tip-font{
+  width: 500rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-left: 60rpx;
+}
+.top-tip image{
+  display: block;
+  height: 40rpx;
+  width: 40rpx;
+  float: left;
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+}
