@@ -8,11 +8,12 @@
 
 ### 此微信小程序目前在线运行，小程序码截图如下：
 <div>
-<image src="https://github.com/kingfront/poem_mini/blob/master/wimage/321576811809_.pic.jpg" style="display:inline-block" width="300" />
-<image src="https://github.com/kingfront/poem_mini/blob/master/wimage/331576811810_.pic.jpg" style="display:inline-block" width="300" />
-<image src="https://github.com/kingfront/poem_mini/blob/master/wimage/341576811810_.pic.jpg" style="display:inline-block" width="300" />
-<image src="https://github.com/kingfront/poem_mini/blob/master/wimage/351576811811_.pic.jpg" style="display:inline-block" width="300" />
-<image src="https://github.com/kingfront/poem_mini/blob/master/wimage/361576811812_.pic.jpg" style="display:inline-block" width="300" />
+<image src="https://github.com/kingfront/poem_mini/blob/master/wimage/321576811809_.pic.jpg" style="display:inline-block" width="280" />
+<image src="https://github.com/kingfront/poem_mini/blob/master/wimage/331576811810_.pic.jpg" style="display:inline-block" width="280" />
+<image src="https://github.com/kingfront/poem_mini/blob/master/wimage/341576811810_.pic.jpg" style="display:inline-block" width="280" />
+<image src="https://github.com/kingfront/poem_mini/blob/master/wimage/351576811811_.pic.jpg" style="display:inline-block" width="280" />
+<image src="https://github.com/kingfront/poem_mini/blob/master/wimage/361576811812_.pic.jpg" style="display:inline-block" width="280" />
+  <image src="https://github.com/kingfront/poem_mini/blob/master/wimage/391576829096_.pic.jpg" style="display:inline-block" width="280" />
 </div>
 
 ## 小程序线上体验码
