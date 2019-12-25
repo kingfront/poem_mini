@@ -5,7 +5,7 @@ const util = require("../../utils/util.js");
 Page({
   data: {
     userInfo: {},
-    mingjuInfo: {},
+    mingjuInfo: null,
     authorInfo: null,
     imageUrl: null,
     topTip: true,
@@ -65,6 +65,7 @@ Page({
         wx.stopPullDownRefresh();
       },
       fail: err => {
+        console.info(err)
         wx.hideToast();
       }
     })

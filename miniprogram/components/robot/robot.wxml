@@ -1,0 +1,6 @@
+<navigator url="/pages/chat/chat" open-type="navigate" hover-class="other-navigator-hover"> 
+  <view class="wxView animation-shake">
+    <image class='wxImg' src='../../images/robot.png'></image>
+    <!-- <view class="robot-title">小依机器人</view> -->
+  </view>
+</navigator>

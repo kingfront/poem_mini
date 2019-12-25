@@ -1,4 +1,4 @@
-// miniprogram/pages/game/game.js
+// miniprogram/components/robot/robot.js
 Page({
 
   /**

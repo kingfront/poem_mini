@@ -5,7 +5,9 @@
     "pages/mine/mine",
     "pages/search/search",
     "pages/pass/pass",
-    "pages/wifi/wifi"
+    "pages/wifi/wifi",
+    "pages/chat/chat",
+    "components/robot/robot"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -40,8 +42,22 @@
       }
     ]
   },
+  "plugins": {
+    "chatbot": {
+      "version": "1.1.10",
+      "provider": "wx8c631f7e9f2465e1"
+    },
+    "WechatSI": {
+      "version": "0.3.3",
+      "provider": "wx069ba97219f66d99"
+    }
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
   "usingComponents": {
-    "help": "components/help/help"
+    "help": "components/help/help",
+    "robot": "components/robot/robot"
   },
   "navigateToMiniProgramAppIdList": [
     "wxf41876102dde0d23"
